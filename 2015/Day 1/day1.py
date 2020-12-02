@@ -18,4 +18,5 @@ if __name__ == "__main__":
             floor -= 1
             if not reachedFloor and floor == -1:
                 print(length)
+                reachedFloor = True
     print(floor)
