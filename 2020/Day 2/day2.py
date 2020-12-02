@@ -3,10 +3,9 @@ import sys
 
 def checkPassword(min,max,letter,words):
     numberOfLetter = words.count(letter)
-    if numberOfLetter >= min and numberOfLetter <= max:
-        return True
-    else:
-        return False
+    return numberOfLetter >= min and numberOfLetter <= max
+
+
 def checkPasswordPolicy(test_list):
     correctPasswords = 0
     for line in test_list:
