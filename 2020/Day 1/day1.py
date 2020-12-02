@@ -1,4 +1,6 @@
 import itertools
+import os
+import sys
 
 def say_two (content_list):
     for a,b in itertools.combinations(content_list,2):
@@ -11,8 +13,10 @@ def  say_three(content_list):
             print(a)
             print(b)
             print(c)
+
 if __name__ == "__main__":
-    test = open(r'C:\Users\James\Desktop\Code\Advent of code\Day 1\mytext.txt')
+    path = os.path.join(sys.path[0], 'mytext.txt')
+    test = open(path)
     testContent = test.read()
     test_list = testContent.splitlines()
     test.close()
