@@ -20,14 +20,12 @@ def checkPositions(test_list):
     correctPasswords = 0
     for line in test_list:
         x = line.split(" ")
-        num = x[0].split("-")
+        pos = x[0].split("-")
         letter = x[1][0]
-        for i in range(0, len(num)):
-            num[i] = int(num[i])
-
-        if (x[2][num[0]-1] == letter) ^ (x[2][num[1]-1] == letter):
+        for i in range(0, len(pos)):
+            pos[i] = int(pos[i])
+        if (x[2][pos[0]-1] == letter) ^ (x[2][pos[1]-1] == letter):
             correctPasswords +=1
-
     print(correctPasswords)
 
 
