@@ -10,7 +10,7 @@ def slopeQuestion(changeX, changeY, test_list):
     trees = 0
     for i in range(0, len(test_list)-1):
         x += changeX
-        x %= 31
+        x %= len(test_list[i])-1
         y += changeY
         if y >= len(test_list):
             break
