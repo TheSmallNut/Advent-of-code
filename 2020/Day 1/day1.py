@@ -17,8 +17,7 @@ def  say_three(content_list):
 if __name__ == "__main__":
     path = os.path.join(sys.path[0], 'mytext.txt')
     test = open(path)
-    testContent = test.read()
-    test_list = testContent.splitlines()
+    test_list = test.readlines()
     test.close()
     for i in range(0, len(test_list)):
         test_list[i] = int(test_list[i])

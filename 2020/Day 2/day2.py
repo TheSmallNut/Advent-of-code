@@ -32,8 +32,7 @@ def checkPositions(test_list):
 if __name__ == "__main__":
     path = os.path.join(sys.path[0], 'input.txt')
     test = open(path)
-    testContent = test.read()
-    test_list = testContent.splitlines()
+    test_list = test.readlines()
     test.close()
     checkPasswordPolicy(test_list)
     checkPositions(test_list)
