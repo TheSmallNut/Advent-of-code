@@ -6,10 +6,11 @@ currentIndex = 0
 
 def checkPassport(startingIndex, list):
     variables = getVariablesIntoList(startingIndex, list)
+    global requiredPassportFields
     for field in requiredPassportFields:
         valid = False
         for variable in variables:
-            if field in variable:
+            if field in variable:            
                 valid = True
                 break
         if valid == False:
