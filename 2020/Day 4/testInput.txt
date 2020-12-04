@@ -1,0 +1,4 @@
+ecl:amb byr:1964 iyr:2018
+pid:014457573
+cid:152
+eyr:2028 hgt:171cm hcl:#866857
