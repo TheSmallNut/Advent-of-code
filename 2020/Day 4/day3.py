@@ -31,6 +31,8 @@ def getVariablesIntoList(startingIndex,list):
     for i in range(0, endingIndex - startingIndex):
         lineList = list[i+startingIndex].split(" ")
         for i in lineList:
+            if "\n" in i:
+                i = i[:-1]
             variables.append(i)
     global currentIndex
     currentIndex = endingIndex + 1
