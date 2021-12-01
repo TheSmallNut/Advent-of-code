@@ -1,0 +1,17 @@
+grab first two letters
+grab 3rd and 4th letter, compare
+grab 4th and 5th
+grab 5th and 6th
+grab 6th and 7th
+etc etc
+
+
+
+grab 2nd and 3rd letter
+grab 4th and 5th letter
+grab 6th and 7th
+etcccccc
+
+grab 3rd and 4th letter
+grab 5th and 6th letter
+grab 6th and 7th letter
