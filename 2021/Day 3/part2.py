@@ -9,6 +9,7 @@ file.close()
 
 
 listOfLists = []
+oxygenGeneratorValue = list(listOfLists)
 
 for line in input:
     line = line.split()[0]
@@ -18,7 +19,6 @@ for line in input:
 
     for x in range(len(line)):
         listOfLists[x].append(int(line[x]))
-
 
 
 def getMostCommonNumberInList(list):
@@ -32,12 +32,25 @@ def getMostCommonNumberInList(list):
         return None
 
 
+mostCommonNumberList = []
+leastCommonNumberList = []
+for list in listOfLists:
+    mostCommonNumber = getMostCommonNumberInList(list)
+    if mostCommonNumber == None:
+        mostCommonNumber = 1
+    leastCommonNumber = abs(mostCommonNumber - 1)
+    mostCommonNumberList.append(mostCommonNumber)
+    leastCommonNumberList.append(leastCommonNumber)
 
-while(True):
+
+def oxygenGeneratorValue():
     for list in listOfLists:
-        mostCommonNumber = getMostCommonNumberInList(list)
-        if mostCommonNumber == None:
-            mostCommonNumber = 1
+        for x in range(len(list)):
+            index = (listOfLists.index(list))
+            print(index)
+            if list[x] != mostCommonNumberList[index]:
+                listOfLists.remove(list)
 
 
-
+oxygenGeneratorValue()
+# print(listOfLists)
