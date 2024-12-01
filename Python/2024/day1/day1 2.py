@@ -1,6 +1,3 @@
-from dotenv import load_dotenv
-
-load_dotenv()
 input_file_path = f"Python/2024/day1/input.txt"
 
 with open(input_file_path, 'r') as file:
