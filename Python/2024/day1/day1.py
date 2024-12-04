@@ -15,8 +15,6 @@ for line in contents:
 leftList.sort()
 rightList.sort()
 
-
-
 total = 0
 for i in range(len(leftList)):
     total += abs(leftList[i] - rightList[i])
